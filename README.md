@@ -1,4 +1,4 @@
-# CS7641 Assignment1
+# CS7641 Assignment 1
 
 ### Supervised Learning
 
