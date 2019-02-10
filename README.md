@@ -6,8 +6,8 @@ All the code is contained in the respective folder for each dataset.
 
 There are two folders:
 
-- Dataset 1 (Adult)
-- Dataset 2 (Digits)
+- Adult Census Dataset
+- Handwritten Digits
 
 *Note:* There is a separate script for each algorithm.
 
