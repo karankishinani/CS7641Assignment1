@@ -2,6 +2,8 @@
 
 ### Supervised Learning
 
+**GitHub Link:** https://github.gatech.edu/kkishinani3/CS7641Assignment1
+
 All the code is contained in the respective folder for each dataset.
 
 There are two folders:
