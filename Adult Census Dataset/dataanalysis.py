@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
+#import matplotlib.pyplot as plt
+#import seaborn as sns
 import sklearn.preprocessing as preprocessing
 
 # Importing the Dataset
@@ -61,15 +61,15 @@ for label in labels:
     dataset[label] = preprocessing.LabelEncoder().fit(dataset[label]).transform(dataset[label])
 
 # Calculate the correlation and plot it
-sns.heatmap(dataset.corr(), square=True, center=1)
-plt.title('Figure 0: Correlation in Adult Dataset')
-plt.savefig('figure0.png', bbox_inches='tight')
+#sns.heatmap(dataset.corr(), square=True, center=1)
+#plt.title('Figure 0: Correlation in Adult Dataset')
+#plt.savefig('figure0.png', bbox_inches='tight')
 
 
 # Remove education and fnlwgt
 dataset.drop(labels = ['education','fnlwgt','hours-per-week'], axis = 1, inplace = True)
 
-
+dataset.to_csv('adult.csv', index=False)
 X = dataset.drop('income', axis=1)
 y = np.asarray(dataset['income'])
 
